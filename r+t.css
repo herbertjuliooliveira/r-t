@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: rgb(49, 3, 3);
+}
+header {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    background-image: linear-gradient(to right, red, black, blue);
+    color: white;
+    border-radius: 20px;
+}
+.nome {
+    width: 400px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 20px;
+    margin: auto;
+    font-family: fantasy;
+    margin-bottom: 10px;
+}
+main {
+    
+    margin: auto;
+    width: 300px;
+    background-color:rgba(0, 0, 0, 0.326) ;
+}
+main > p {
+    padding: 15px;
+    color: white;
+    text-indent: 20px;
+}
