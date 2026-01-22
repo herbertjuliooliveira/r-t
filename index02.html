@@ -1,19 +1,84 @@
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Loop Infinito de Fotos</title>
- <link rel="stylesheet" href="r+t.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 mês </title>
+    <style>
+      
+        
+        body {
+            height: 100vh;
+            background-position: center;
+            background-color: rgb(0, 0, 0);
+            background-image: url('imagens/fundo02.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+       
+        main {
+    
+    margin: auto;
+    width: 300px;
+    background-color:rgba(0, 0, 0, 0.326) ;
+}
+main > p {
+    padding: 15px;
+    color: white;
+    text-indent: 20px;
+}
+        .album {
+    width: 90%;
+    max-width: 900px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #000;
+    margin: auto;
+    margin-top: 30px;
+    background-image: linear-gradient(to bottom, rgb(4, 5, 33), rgb(45, 24, 24));
+    font-family: "Macondo", cursive;;
+    font-weight: bolder;
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+}
 
+.album-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
+
+
+.album-track img {
+    width: 250px;
+    height: 280px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.album:hover .album-track {
+    animation-play-state: paused;
+}
+    </style>
 </head>
 <body>
-  
- <header>
-    <h1>27/12/2025</h1>
- </header>
+
 <div class="nome">
      <p>Riquelme💘Tainá</p>
 </div>
- <div class="album">
+        <div class="album">
     <h2>Fotos</h2>
     <div class="album-track">
         <img src="imagens/img02.jpg">
@@ -43,8 +108,5 @@
 
 <p>EU TE AMO MINHA VIDA!!!!!</p>
 </main>
- <div class="imgcircle">
-
-</div>
 </body>
 </html>
